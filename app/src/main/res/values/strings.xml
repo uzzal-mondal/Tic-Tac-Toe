@@ -1,0 +1,260 @@
+<resources>
+    <string name="app_name">TicTacToe</string>
+    <string name="tic_tac_toe">Tic Tac Toe</string>
+    <string name="player_1">Player 1</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="player_2">Player 2</string>
+    <string name="let_s_play">Let\'s Play</string>
+    <!--    /**/  -->
+    <string name="file_provider_authority" translatable="false">com.itechsofsolutions.tictactoe</string>
+
+
+   <string name="intent_type_image" translatable="false">image/*</string>
+    <string name="intent_extra_return_data" translatable="false">return-data</string>
+    <string name="please_wait">Please Wait</string>
+    <string name="loading">Loading…</string>
+    <string name="one" translatable="false">1</string>
+    <string name="two" translatable="false">2</string>
+    <string name="three" translatable="false">3</string>
+
+    <!--Braintree-->
+    <string name="tokenization_key" translatable="false">sandbox_2456gg48_nb4d5xrgdbzxdmf6</string>
+    <!--API-->
+    <string name="api_base_url" translatable="false">https://ebuy-dev.dev02.squaredbyte.com/api/</string>
+    <string name="base_url" translatable="false">https://ebuy-dev.dev02.squaredbyte.com/</string>
+    <!--  <string name="api_base_url" translatable="false">https://asha-74az.localhost.run/api/</string>
+      <string name="base_url" translatable="false">https://asha-74az.localhost.run/</string>-->
+    <string name="authorization_key" translatable="false">eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiZWJ1eS1hbmRyb2lkLWFwcHMiLCJpYXQiOjE1NzIzNzI3Nzh9.X1qxpv6WDUP-7Ootx7cISwCUeYtulHhqhxvDjpAzCSg</string>
+
+    <!--Error-->
+    <string name="error_could_not_create_bitmap">Could not create bitmap from the view</string>
+    <string name="error_dao_is_null">Dao is null</string>
+    <string name="error_adapter_size_is_null">Adapter size is null</string>
+    <string name="error_image_picking_intent_is_null">Image picking intent is null</string>
+    <string name="error_fragment_context_is_null">Fragment context is null</string>
+    <string name="error_selected_image_uri_is_null">Selected image uri is null</string>
+    <string name="error_could_not_crop_image">Could not crop image</string>
+    <string name="error_context_is_null">Context is null</string>
+    <string name="error_image_uri_is_null">Image Uri is null</string>
+    <string name="error_internet_connection">Please check your internet connection</string>
+    <string name="error_unauthenticated">Unauthenticated.</string>
+
+    <!--Warning-->
+    <string name="warning_permissions_are_required">Permissions are required</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_up">Sign up</string>
+    <string name="create_your_new_account">Create your new account</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="already_have_an_account_sign_in">Already have an account? Sign In</string>
+    <string name="homr">Home</string>
+    <string name="michele_done">MICHELE DONE</string>
+    <string name="abcddd_gggggg_vom">abcddd@gggggg.vom</string>
+    <string name="sign_in_to_your_account">Sign in to your account</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="don_t_have_account_sign_up">Don\'t have account? Sign up</string>
+    <string name="or_connect_with">Or connect with :</string>
+    <string name="enter_your_email_and_we_will_send_code_n_to_reset_password">Enter your email \n and we will send code \n to reset password</string>
+    <string name="send">SEND</string>
+    <string name="code_confirmation">Code Confirmation</string>
+    <string name="enter_your_code_we_sent_to_your_email">Enter your code \n we sent to your email \n %s</string>
+    <string name="your_code">Your Code</string>
+    <string name="resend_code">Resend Code</string>
+    <string name="confirm">Confirm</string>
+    <string name="sign_out_nav">SIGN OUT</string>
+    <string name="settings">SETTINGS</string>
+    <string name="blog">BLOG</string>
+    <string name="change_password">CHANGE PASSWORD</string>
+    <string name="my_order">MY ORDER</string>
+    <string name="my_order_title">My Order</string>
+
+    <string name="categories">Categories</string>
+    <string name="flash_sale">Flash Sale</string>
+    <string name="new_arrival">New Arrival</string>
+    <string name="trendings_item">Trending Items</string>
+    <string name="see_all">See All</string>
+    <string name="offer_end">Offer End</string>
+    <string name="product_name_here">Product Name Here</string>
+    <string name="profile">Profile</string>
+    <string name="alex_genderia">Alex Genderia</string>
+    <string name="yourname_domain_com">yourname@domain.com</string>
+    <string name="personal_information">Personal Information</string>
+    <string name="_875746353553">+875746353553</string>
+    <string name="bangladesh">Bangladesh</string>
+    <string name="save_change">Save Changes</string>
+    <string name="search">Search</string>
+    <string name="search_here">Search here</string>
+    <string name="recent_search">Recent Search</string>
+    <string name="frock">Frock</string>
+    <string name="suggested_product">Suggested Product</string>
+    <string name="women_fashions">Women Fashions</string>
+    <string name="_23456_items">(23456 items)</string>
+    <string name="cart">Cart</string>
+    <string name="total_product">Total Product</string>
+    <string name="_10">10</string>
+    <string name="sub_price">Sub Price</string>
+    <string name="vat">VAT</string>
+    <string name="delivery_charge">Delivery Charge</string>
+    <string name="total_price">Total Price</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="old_password">Old Password</string>
+    <string name="new_password">New Password</string>
+    <string name="done">Done</string>
+    <string name="_05_august_2019">05 August 2019</string>
+    <string name="clear_all">Clear All</string>
+    <string name="viewed">Viewed</string>
+    <string name="price">Price :</string>
+    <string name="lorem_ipsom">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised.</string>
+    <string name="product">Product</string>
+    <string name="price_range">Price Range</string>
+    <string name="select_brand">Select Brand</string>
+    <string name="select_all">Select all</string>
+    <string name="gucci">Gucci</string>
+    <string name="l">L</string>
+    <string name="filter">Filter</string>
+    <string name="_456_00">$ 456.00</string>
+    <string name="quantity">Quantity : </string>
+    <string name="descriptions">Descriptions</string>
+    <string name="additional_information">Additional Information</string>
+    <string name="reviews">Reviews</string>
+    <string name="add_your_review">Add Your Review</string>
+    <string name="str">*</string>
+    <string name="your_rating">Your Rating</string>
+    <string name="your_review">Your Review</string>
+    <string name="your_name">Your Name</string>
+    <string name="joey_tribbiani">Joey Tribbiani</string>
+    <string name="_1_month_ago">1 month ago</string>
+    <string name="add_to_cart">Add To Cart</string>
+    <string name="submit">Submit</string>
+    <string name="billing_address">Billing Address</string>
+    <string name="address">Address</string>
+    <string name="postal_code">Postal Code</string>
+    <string name="proceed_to_payment">Proceed to payment</string>
+    <string name="other_note">Other Note</string>
+    <string name="delivered">Delivered</string>
+    <string name="pending">Pending</string>
+    <string name="processing">Processing</string>
+    <string name="cancel">Cancelled</string>
+    <string name="order_id">Order ID</string>
+    <string name="_clone">:</string>
+    <string name="product_name">Product Name</string>
+    <string name="there_are_many_variations_of_passages_for_common_people">There are many variations of passages for common people</string>
+    <string name="read_more">…<b>READ MORE</b></string>
+    <string name="share_with">Share With : </string>
+    <string name="your_email">Your Email</string>
+    <string name="size">Size :</string>
+    <string name="wish_list">WishList</string>
+    <string name="setting_title">Settings</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="choose_from_gallery">Choose From Gallery</string>
+    <string name="photo_title">Photo Title</string>
+    <string name="select_file">Select File</string>
+    <string name="home">HOME</string>
+    <string name="categories_nav">CATEGORIES</string>
+    <string name="apply">Apply</string>
+    <string name="product_details">Product Details</string>
+    <string name="continues">Continue</string>
+    <string name="shipping_address">Shipping Address</string>
+
+    <string name="your_comment_hint">Leave a comment</string>
+    <string name="blog_small">Blog</string>
+    <string name="blog_details">Blog Details</string>
+    <string name="confirm_continue">Save</string>
+    <string name="change_language">Change Language</string>
+    <string name="push_notification">Push Notification</string>
+    <string name="your_address">Your Address</string>
+    <string name="change_address"><u>CHANGE ADDRESS</u></string>
+    <string name="product_payment">Product Payment</string>
+    <string name="total_items">Total Items</string>
+    <string name="proceed_to_checkout">Proceed to checkout</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+
+    <!--Registration Related-->
+    <string name="registration_error_of_registration">Could not register. Try again please</string>
+    <string name="empty_invalid_fields">Please fill up all the fields</string>
+    <string name="registration_error_valid_email">Please enter valid email</string>
+    <string name="registration_error_valid_mobile_phone">Please enter valid phone number</string>
+    <string name="registration_error_valid_country">Please select a country</string>
+    <string name="registration_error_user_name_char_limit">Name can not be more than 50 characters</string>
+    <string name="registration_error_valid_password">Password must be at least 6 characters</string>
+    <string name="registration_error_not_same_password">Passwords don\'t match</string>
+
+    <!--Email Verification-->
+    <string name="error_valid_verification_code">Please enter valid verification code</string>
+    <string name="error_valid_verification_code_empty">Please fill up the verification code field</string>
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="something_went_wrong_with_the_link">Something went wrong with the link.</string>
+
+    <!--Email Verification-->
+    <string name="login_error_login">Could not login. Try again please</string>
+    <string name="forgot_password_email_error">Please fill up the email field</string>
+    <string name="forgot_password_code_error">Reset code doesn\'t match</string>
+    <string name="logout_session_expire">Session Expired</string>
+    <string name="are_you_sure">Are you sure?</string>
+
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="could_not_fetch_data">Could not fetch data. Please try again</string>
+    <string name="shop_now">Shop now</string>
+    <string name="asset">assets</string>
+    <string name="add_fav_error">Could not add to wish list</string>
+    <string name="remove_fav_error">Could not remove from wish list</string>
+    <string name="brand_puma">Brand : %s</string>
+    <string name="price_450">Price : %s</string>
+    <string name="no_item_found">No Data Found!</string>
+    <string name="facebook_app_id">2546608595433244</string>
+    <string name="google_failed">Google SignIn failed</string>
+    <string name="fb_failed">Facebook SignIn failed</string>
+    <string name="my_address">MY ADDRESS</string>
+    <string name="my_address_new">My Address</string>
+    <string name="house">House</string>
+    <string name="plot_number">Plot Number</string>
+    <string name="street_road">Street/Road</string>
+    <string name="area">Area</string>
+    <string name="block_sector">Block/Sector</string>s
+    <string name="update">Update</string>
+    <string name="select_color">Select Color</string>
+    <string name="error_mx_quantity">You can not surpass maximum quantity</string>
+    <string name="error_quantity_min">Quantity must be at least one</string>
+    <string name="error_product_not_available">This product is not available</string>
+    <string name="error_review_commnet">Please fill the comment section</string>
+    <string name="error_review_rating">Please give a rating</string>
+    <string name="select_attribute">Please select attribute</string>
+    <string name="error_quantity_exceed">Your quantity exceeding the inventory</string>
+    <string name="image_is_corrupted">Image is corrupted</string>
+    <string name="error_att_not_match">Your chosen product is not available. Please select different attribute.</string>
+    <string name="district">District</string>
+    <string name="change_currency">Change Currency</string>
+    <string name="currency_api_key" translatable="false">20880c57d79c7f43a428</string>
+    <string name="currency_ultra" translatable="false">ultra</string>
+    <string name="install_the_app">Please install the app first.</string>
+    <string name="google_api_keys" translatable="false">AIzaSyACD590EnzmAM8LVLOJhDXVG2yMtW7uns0</string>
+    <string name="error_fill_comment">Please fill the comment section</string>
+    <string name="change_password_title">Change Password</string>
+    <string name="payment_method">Payment Method</string>
+    <string name="checkout">Checkout</string>
+    <string name="confirm_checkout">Order Confirmation</string>
+    <string name="country">Country</string>
+    <string name="admin">Admin</string>
+    <string name="comment_with_space">\ Comment</string>
+    <string name="comments_with_space">\ Comments</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="your_comment">Your comment</string>
+    <string name="offer">OFFER</string>
+    <string name="add_a_reply">Please add a reply</string>
+    <string name="add_a_reply_toblog">Add a reply…</string>
+    <string name="reply">Reply</string>
+    <string name="other_att">Please choose other attribute/s</string>
+    <string name="products">Products</string>
+    <string name="edit">Edit</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="_100">100%</string>
+
+
+
+</resources>

@@ -1,0 +1,153 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+// For crashlytics
+//apply plugin: 'io.fabric'
+
+// Add kapt plugin for compiling data binding in kotlin
+apply plugin: 'kotlin-kapt'
+
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+    defaultConfig {
+        applicationId "com.itechsofsolutions.tictactoe"
+        minSdkVersion 22
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'),
+                    'proguard-rules.pro'
+        }
+    }
+
+
+    // Enable Android data binding library
+    dataBinding {
+        enabled true
+    }
+/*    dokka {
+        outputFormat = 'html'
+        outputDirectory = "documentation"
+
+        // Do not output deprecated members
+        skipDeprecated = true
+
+        // Emit warnings about not documented members.
+        reportUndocumented = true
+    }*/
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    productFlavors {
+    }
+    lintOptions {
+        checkReleaseBuilds false
+    }
+
+}
+
+dependencies {
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+
+    implementation 'com.google.android.material:material:<version>'
+
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+
+    // Core with kotlin extension
+    implementation 'androidx.core:core-ktx:1.0.2'
+
+    // Core library
+    implementation 'androidx.core:core:1.0.2'
+
+    // MultiDex
+    implementation 'androidx.multidex:multidex:2.0.1'
+
+    // Lifecycle (Java 8 Support / instead of lifecycle compiler)
+    implementation "androidx.lifecycle:lifecycle-common-java8:$rootProject.ext.lifecycle_version"
+
+// Lifecycle with reactive streams
+    implementation "androidx.lifecycle:lifecycle-reactivestreams-ktx:$rootProject.ext.lifecycle_version"
+
+    // ViewModel and LiveData
+    implementation "androidx.lifecycle:lifecycle-extensions:$rootProject.ext.lifecycle_version"
+    kapt "androidx.lifecycle:lifecycle-compiler:$rootProject.ext.lifecycle_version"
+
+    // Lifecycle only
+    implementation "androidx.lifecycle:lifecycle-runtime:$rootProject.ext.lifecycle_version"
+
+    // Android support libraries
+    // Appcompat
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+
+    // Design library
+    implementation "com.google.android.material:material:$rootProject.ext.androidx_version"
+
+    // RecyclerView
+    implementation "androidx.recyclerview:recyclerview:$rootProject.ext.androidx_version"
+    implementation "androidx.recyclerview:recyclerview-selection:$rootProject.ext.androidx_version"
+
+    // CardView
+    implementation "androidx.cardview:cardview:$rootProject.ext.androidx_version"
+
+    // Exif Interface (for image processing; i.e. rotate)
+    implementation "androidx.exifinterface:exifinterface:$rootProject.ext.androidx_version"
+
+    // Support vector drawable
+    implementation 'androidx.vectordrawable:vectordrawable:1.0.1'
+
+    // Animated vector drawable
+    implementation "androidx.vectordrawable:vectordrawable-animated:$rootProject.ext.androidx_version"
+
+    // Constraint layout
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.0-beta3'
+
+    // Circular ImageView
+    implementation 'com.mikhaellopez:circularimageview:3.2.0'
+
+    // Glide (Image loader)
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+
+    // uCrop (crops images)
+    implementation 'com.github.yalantis:ucrop:2.2.2'
+
+    // Stylish toast message
+    implementation 'com.github.GrenderG:Toasty:1.3.0'
+
+    // Reactive Extensions (Rx)
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.0'
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.4'
+    implementation 'com.jakewharton.rxrelay2:rxrelay:2.1.0'
+
+
+    // Timber (Replacement of log)
+    implementation 'com.jakewharton.timber:timber:4.7.1'
+
+    // Text drawable
+    implementation 'com.amulyakhare:com.amulyakhare.textdrawable:1.0.1'
+
+}
+
+//apply plugin: 'com.google.gms.google-services'
+
