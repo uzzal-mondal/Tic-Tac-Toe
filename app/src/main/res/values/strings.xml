@@ -2,7 +2,8 @@
     <string name="app_name">TicTacToe</string>
     <string name="tic_tac_toe">Tic Tac Toe</string>
     <string name="player_1">Player 1</string>
-    <string name="enter_your_name">Enter your name</string>
+    <string name="enter_first_name">Enter first player name</string>
+    <string name="enter_second_name">Enter second player name</string>
     <string name="player_2">Player 2</string>
     <string name="let_s_play">Let\'s Play</string>
     <!--    /**/  -->
