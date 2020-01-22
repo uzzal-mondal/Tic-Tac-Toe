@@ -18,7 +18,7 @@
     <color name="text_color">#A5A6A7</color>
     <color name="bg_view">#216DFD</color>
     <color name="bg_button">#F8D320</color>
-
+    <color name="background_tint_color">#F8D320</color>
 
 
 </resources>

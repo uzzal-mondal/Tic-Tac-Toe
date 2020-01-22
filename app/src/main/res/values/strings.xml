@@ -255,7 +255,8 @@
     <string name="edit">Edit</string>
     <string name="cancel_button">Cancel</string>
     <string name="_100">100%</string>
-
+    <string name="x">x</string>
+    <string name="o">o</string>
 
 
 </resources>
