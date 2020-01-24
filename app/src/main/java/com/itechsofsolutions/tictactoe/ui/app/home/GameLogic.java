@@ -20,7 +20,7 @@ public class GameLogic {
             if (sBlocks[first - 1].getId() == CIRCLE){
                 sWinner = "CIRCLE";
             }else {
-                sWinner = "CRoss";
+                sWinner = "CROSS";
             }
         }
         return value;

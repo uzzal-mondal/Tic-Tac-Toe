@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorPrimary">#222C6B</color>
+    <color name="colorPrimaryDark">#222C6B</color>
     <color name="colorAccent">#D81B60</color>
     <color name="app_background">#222C6B</color>
     <color name="color_white">#ffffff</color>
+    <color name="color_bg_button">#19A15F</color>
+
+    <color name="stick_color">#aaaaaa</color>
 
     <color name="transparent">#00000000</color>
     <color name="color_black">#000000</color>
@@ -12,7 +15,6 @@
 
 
     <color name="grid_color">#dddddd</color>
-    <color name="stick_color">#aaaaaa</color>
     <color name="display_color">#dddddd</color>
     <color name="card_background">#1B2036</color>
     <color name="text_color">#A5A6A7</color>

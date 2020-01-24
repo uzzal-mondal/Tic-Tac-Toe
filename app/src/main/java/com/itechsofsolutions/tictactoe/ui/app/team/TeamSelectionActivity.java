@@ -1,13 +1,10 @@
 package com.itechsofsolutions.tictactoe.ui.app.team;
-
 import android.app.Activity;
 import android.content.Intent;
-import android.graphics.Color;
 import android.view.View;
 
-import androidx.core.content.ContextCompat;
+import androidx.appcompat.widget.AppCompatButton;
 
-import com.google.android.material.button.MaterialButton;
 import com.itechsofsolutions.tictactoe.R;
 import com.itechsofsolutions.tictactoe.data.helper.Constants;
 import com.itechsofsolutions.tictactoe.databinding.ActivityTeamSelectionBinding;
@@ -63,43 +60,46 @@ public class TeamSelectionActivity extends BaseActivity<TeamSelectionMvpView,
 
             case R.id.button_player_X:
                 if (isButtonClicked) {
-                    mBinding.buttonPlayerX.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
-                  //mBinding.buttonPlayerX.setBackgroundTintList(ContextCompat.getColorStateList(this, R.color.colorPrimary));
-                    //SharedPrefUtils.INSTANCE.write(Constants.Prefernces.)
+                  /* SharedPrefUtils.INSTANCE.write(Constants.Prefernces.PLAYER_NAME_ONE,
+                           mBinding.buttonPlayerX.callOnClick());*/
+
+                    mBinding.buttonPlayerX.setBackgroundColor(getResources().getColor(R.color.color_bg_button));
+
                 } else {
                     checkableButton(mBinding.buttonPlayerX, mBinding.buttonPlayerO, mBinding.buttonPlayerX2);
-                    mBinding.buttonPlayerX.setTextColor(Color.BLUE);
-                   // mBinding.buttonPlayerX.setBackgroundTintList(ContextCompat.getColorStateList(this, R.color.colorPrimary));
                     isButtonClicked = true;
                 }
                 break;
 
             case R.id.button_player_O:
                 if (isButtonClicked) {
-                    mBinding.buttonPlayerO.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+                    /*mBinding.buttonPlayerO.setBackgroundTintList(ContextCompat.
+                            getColorStateList(this, R.color.color_bg_button));*/
+                    mBinding.buttonPlayerO.setBackgroundColor(getResources().getColor(R.color.color_bg_button));
                 } else {
-                    checkableButton(mBinding.buttonPlayerX, mBinding.buttonPlayerO2, mBinding.buttonPlayerX2);
+                    checkableButton(mBinding.buttonPlayerO, mBinding.buttonPlayerX, mBinding.buttonPlayerO2);
                     isButtonClicked = true;
                 }
                 break;
 
             case R.id.button_player_X_2:
                 if (isButtonClicked) {
-                    mBinding.buttonPlayerX2.setBackgroundTintList(ContextCompat.getColorStateList(this, R.color.colorPrimary));
+                   /* mBinding.buttonPlayerX2.setBackgroundTintList(ContextCompat.
+                            getColorStateList(this, R.color.color_bg_button));*/
+                    mBinding.buttonPlayerX2.setBackgroundColor(getResources().getColor(R.color.color_bg_button));
                 } else {
-                    checkableButton(mBinding.buttonPlayerX2, mBinding.buttonPlayerO, mBinding.buttonPlayerX2);
+                    checkableButton(mBinding.buttonPlayerX2, mBinding.buttonPlayerO,
+                            mBinding.buttonPlayerX2);
                     isButtonClicked = true;
                 }
                 break;
 
             case R.id.button_player_O_2:
                 if (isButtonClicked) {
-                    mBinding.buttonPlayerO2.setBackgroundTintList(ContextCompat.getColorStateList(this, R.color.colorPrimary));
+                    mBinding.buttonPlayerO2.
+                            setBackgroundColor(getResources().getColor(R.color.color_bg_button));
                 } else {
                     checkableButton(mBinding.buttonPlayerO2, mBinding.buttonPlayerO,mBinding.buttonPlayerX2);
-                    // mBinding.buttonPlayerO2.setTextColor(Color.GREEN);
-                    mBinding.buttonPlayerO2.setBackgroundTintList(ContextCompat.
-                            getColorStateList(this, R.color.colorPrimary));
                     isButtonClicked = true;
                 }
                 break;
@@ -110,19 +110,17 @@ public class TeamSelectionActivity extends BaseActivity<TeamSelectionMvpView,
                 SharedPrefUtils.INSTANCE.write(Constants.Prefernces.PLAYER_NAME_TWO,
                         mBinding.editTextP2.getText().toString().trim());
 
-                Intent intent = new Intent(TeamSelectionActivity.this, HomeSelectionActivity.class);
+                Intent intent = new Intent(TeamSelectionActivity.this,
+                        HomeSelectionActivity.class);
                 startActivity(intent);
                 break;
         }
 
     }
 
-    public void checkableButton(MaterialButton playerX, MaterialButton playerO,
-                                MaterialButton player2X) {
-
-        playerX.setBackgroundColor(Color.WHITE);
-        //playerX.setBackgroundColor(getResources().getColor(R.color.colorAccent));
-       // playerX.setBackgroundTintList(ContextCompat.getColorStateList(this, R.color.color_white));
+    public void checkableButton(AppCompatButton playerX, AppCompatButton playerO,
+                                AppCompatButton player2X) {
+        playerX.setBackgroundColor(getResources().getColor(R.color.color_bg_button));
         playerX.setEnabled(false);
 
         playerO.setEnabled(false);

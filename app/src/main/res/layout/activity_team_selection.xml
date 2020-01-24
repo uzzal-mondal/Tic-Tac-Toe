@@ -93,31 +93,31 @@
                     app:layout_constraintTop_toBottomOf="@+id/image_view_profile" />
 
 
-                <com.google.android.material.button.MaterialButton
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/button_player_X"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="40dp"
                     android:layout_marginStart="@dimen/margin_48"
                     android:layout_marginTop="@dimen/margin_32"
-
                     android:text="@string/x"
                     android:textColor="@color/color_black"
-                    android:textSize="@dimen/text_size_22"
-                    app:backgroundTint="@color/background_tint_color"
+                    android:textSize="@dimen/text_size_20"
+                    android:background="@drawable/bg_button"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintRight_toLeftOf="@+id/button_player_O"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/edit_text_p1"
-                    app:layout_constraintWidth_percent="0.3" />
+                    app:layout_constraintWidth_percent="0.3"
+                    app:layout_constraintHeight_percent="0.1"/>
 
 
-                <com.google.android.material.button.MaterialButton
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/button_player_O"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="40dp"
                     android:layout_marginTop="@dimen/margin_32"
                     android:layout_marginEnd="@dimen/margin_48"
-                    android:backgroundTint="@color/background_tint_color"
+                    android:background="@drawable/bg_button"
                     android:text="o"
                     android:textColor="@color/color_black"
                     android:textSize="@dimen/text_size_22"
@@ -201,13 +201,13 @@
                     app:layout_constraintTop_toBottomOf="@+id/image_view_profile2" />
 
 
-                <com.google.android.material.button.MaterialButton
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/button_player_X_2"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="40dp"
                     android:layout_marginStart="@dimen/margin_48"
                     android:layout_marginTop="@dimen/margin_32"
-                    android:backgroundTint="@color/bg_button"
+                    android:background="@drawable/bg_button"
                     android:text="x"
                     android:textColor="@color/color_black"
                     android:textSize="@dimen/text_size_20"
@@ -218,13 +218,13 @@
                     app:layout_constraintWidth_percent="0.3" />
 
 
-                <com.google.android.material.button.MaterialButton
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/button_player_O_2"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="40dp"
                     android:layout_marginTop="@dimen/margin_32"
                     android:layout_marginEnd="@dimen/margin_48"
-                    android:backgroundTint="@color/bg_button"
+                    android:background="@drawable/bg_button"
                     android:text="@string/o"
                     android:textColor="@color/color_black"
                     android:textSize="@dimen/text_size_20"
@@ -239,7 +239,7 @@
         </com.google.android.material.card.MaterialCardView>
 
 
-        <com.google.android.material.button.MaterialButton
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/button_play"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
