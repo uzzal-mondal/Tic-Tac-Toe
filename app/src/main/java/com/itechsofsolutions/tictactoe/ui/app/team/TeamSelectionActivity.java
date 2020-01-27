@@ -110,9 +110,7 @@ public class TeamSelectionActivity extends BaseActivity<TeamSelectionMvpView,
                 SharedPrefUtils.INSTANCE.write(Constants.Prefernces.PLAYER_NAME_TWO,
                         mBinding.editTextP2.getText().toString().trim());
 
-                Intent intent = new Intent(TeamSelectionActivity.this,
-                        HomeSelectionActivity.class);
-                startActivity(intent);
+                HomeSelectionActivity.runActivity(this);
                 break;
         }
 
