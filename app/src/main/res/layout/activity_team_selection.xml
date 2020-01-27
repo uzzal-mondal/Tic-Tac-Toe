@@ -247,7 +247,7 @@
             android:layout_marginTop="@dimen/margin_24"
             android:layout_marginEnd="@dimen/margin_48"
             android:layout_marginBottom="@dimen/margin_48"
-            android:backgroundTint="@color/bg_button"
+            android:background="@drawable/bg_button"
             android:text="@string/let_s_play"
             android:textAllCaps="false"
             android:textColor="@color/color_black"

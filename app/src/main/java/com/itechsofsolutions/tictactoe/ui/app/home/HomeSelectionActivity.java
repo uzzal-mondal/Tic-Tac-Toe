@@ -35,6 +35,8 @@ public class HomeSelectionActivity extends BaseActivity<HomeSelectionMvpView,
             {0, 4, 8}, {2, 4, 6}};
     Boolean active = true;
     Button playButton;
+    private ImageView[] mImageView = new ImageView[9];
+
 
 
     public static void runActivity(Activity mActivity) {
@@ -57,6 +59,7 @@ public class HomeSelectionActivity extends BaseActivity<HomeSelectionMvpView,
 
         mBinding = (ActivityHomeBinding) getViewDataBinding();
         setClickListener();
+        //makeScreen();
        // inItView();
 
 
@@ -68,8 +71,7 @@ public class HomeSelectionActivity extends BaseActivity<HomeSelectionMvpView,
         mBinding.buttonReset.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                // resetBoard();
-
+                //resetBoard();
             }
         });
 
@@ -81,21 +83,14 @@ public class HomeSelectionActivity extends BaseActivity<HomeSelectionMvpView,
 
     }
 
-   /* public void inItView(){
-        for (int col= 0; col<3; col++){
-            for (int row = 0; row<3; row++){
-                img [col][row] = -1;
-            }
-        }
+
+    /*private void makeScreen(){
+        View decorView = getWindow().getDecorView();
+        int uiOptions = View.SYSTEM_UI_FLAG_FULLSCREEN;
+        decorView.setSystemUiVisibility(uiOptions);
+        getSupportActionBar().hide();
 
     }*/
-
-   /*public void inItView(){
-
-       playButton = findViewById(R.id.button_reset);
-
-   }*/
-
 
     public void tapped(View view) {
 
@@ -111,11 +106,11 @@ public class HomeSelectionActivity extends BaseActivity<HomeSelectionMvpView,
 
             if (player == 1) {
                 img.setImageResource(R.drawable.circle);
-                img.animate().translationYBy(1500).rotation(360 * 10).setDuration(1000);
+                img.animate().translationYBy(1500).rotation(360 * 10).setDuration(5);
                 player = 2;
             } else if(player == 2) {
                 img.setImageResource(R.drawable.cross);
-                img.animate().translationYBy(1500).rotation(360 * 10).setDuration(1000);
+                img.animate().translationYBy(1500).rotation(360 * 10).setDuration(5);
                 player = 1;
             }
 
@@ -129,18 +124,22 @@ public class HomeSelectionActivity extends BaseActivity<HomeSelectionMvpView,
 
                     active = false;
                     String win = "";
-                    if (player == 1)
+                    if (player == 1){
                         win = "player 1";
-                    else
+                    } else if (player == 2){
                         win = "Player 2";
+                    }else {
+                        win="Match Draw";
+                    }
+
+                   if (player==1 || player==2){
+                       mBinding.scoreText.setText(win + " , Won the game.");
+                   }else if(player != 0) {
+                       mBinding.scoreText.setText(win+" , Match draw");
+                   }
 
 
-
-
-                    mBinding.scoreText.setText(win + " , Won the game.");
-                    /*Toast.makeText(this, win + "won the grame..",
-                            Toast.LENGTH_SHORT).show();*/
-
+                   // askAnotherGame("msg");
 
 
 
@@ -205,17 +204,13 @@ public class HomeSelectionActivity extends BaseActivity<HomeSelectionMvpView,
             boolean check = true;
 
             for (int i = 0; i<gameState.length; i++){
-
                 if (gameState[i] == 0){
                     check = false;
-
                 }
             }
 
             if (check){
-
-                Button playAgain = findViewById(R.id.button_reset);
-                playAgain.setVisibility(View.VISIBLE);
+                mBinding.buttonReset.setVisibility(View.VISIBLE);
             }
 
 
@@ -251,6 +246,34 @@ public class HomeSelectionActivity extends BaseActivity<HomeSelectionMvpView,
 
 
     }
+
+    /*private void askAnotherGame(String msg){
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(HomeSelectionActivity.this);
+        builder.setMessage(msg);
+        builder.setMessage("play again");
+        builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                //resetBoard();
+
+            }
+        });
+
+        builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+                startActivity(new Intent(HomeSelectionActivity.this, HomeSelectionActivity.class));
+            }
+        });
+
+        AlertDialog alertDialog=builder.create();
+        alertDialog.setCancelable(false);
+        alertDialog.setCanceledOnTouchOutside(false);
+        alertDialog.show();
+
+    }*/
 
 
 }
