@@ -1,11 +1,8 @@
 package com.itechsofsolutions.tictactoe.ui.app.home;
-
 import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
-
 import androidx.databinding.ViewDataBinding;
-
 import com.itechsofsolutions.tictactoe.R;
 import com.itechsofsolutions.tictactoe.data.local.model.GameModel;
 import com.itechsofsolutions.tictactoe.databinding.ItemGameLayoutBinding;
@@ -76,12 +73,14 @@ public class GameAdapter extends BaseAdapter<GameModel> {
                             model.setItemText("X");
                             mBinding.itemTextView.setText(model.getItemText());
                             model.isPressed = true;
+                            isPlayerXedTurn = !isPlayerXedTurn;
                             mListener.itemGameListener(model, getAdapterPosition());
 
                         }else {
                             model.setItemText("O");
                             mBinding.itemTextView.setText(model.getItemText());
                             model.isPressed = true;
+                            isPlayerXedTurn = !isPlayerXedTurn;
                             mListener.itemGameListener(model, getAdapterPosition());
                         }
                     }
