@@ -147,6 +147,22 @@ dependencies {
     // Text drawable
     implementation 'com.amulyakhare:com.amulyakhare.textdrawable:1.0.1'
 
+    //shimmer
+    implementation 'com.romainpiel.shimmer:library:1.4.0@aar'
+
+    //loitte
+    implementation 'com.airbnb.android:lottie:3.3.1'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.2.0-alpha01'
+
+    //pin.. ##
+   // implementation('com.alimuzaffar.lib:pinentryedittext:2.0.6')
+
+    // indicator .. ##
+    implementation 'com.tbuonomo.andrui:viewpagerdotsindicator:4.1.2'
+
+    //pin password
+    implementation 'com.poovam:pin-edittext-field:1.2.1'
 }
 
 //apply plugin: 'com.google.gms.google-services'

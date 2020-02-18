@@ -4,9 +4,7 @@
     <item android:drawable="@color/app_background" />
 
     <item>
-        <bitmap
-            android:gravity="fill_horizontal|fill_vertical"
-            android:src="@drawable/ic_logo"/>
+
     </item>
 
 </layer-list>

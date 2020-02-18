@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_background">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_view_verify"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_24"
+            android:layout_marginTop="@dimen/margin_72"
+            android:layout_marginEnd="@dimen/margin_24"
+            android:gravity="center"
+            android:text="@string/code_verify"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_upper_body"
+            app:fontFamily="@font/sans_bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_view_sent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_72"
+            android:layout_marginTop="@dimen/margin_8"
+            android:layout_marginEnd="@dimen/margin_72"
+            android:gravity="center"
+            android:text="@string/code_sent"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_body"
+            app:fontFamily="@font/sans_regular"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_verify" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_view_code"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_56"
+            android:layout_marginTop="@dimen/margin_32"
+            android:layout_marginEnd="@dimen/margin_72"
+            android:gravity="left"
+            android:text="@string/your_code"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/text_body"
+            app:fontFamily="@font/sans_regular"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_sent" />
+
+
+
+        <com.poovam.pinedittextfield.LinePinField
+            android:id="@+id/lineField"
+            android:layout_width="302dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="@dimen/margin_32"
+            android:layout_marginEnd="@dimen/margin_32"
+            android:inputType="numberPassword"
+            android:textSelectHandle="@drawable/text_handle"
+            android:textSize="16sp"
+            app:bottomTextPaddingDp="15dp"
+            app:distanceInBetween="20dp"
+            android:textColor="@color/colorWhite"
+            app:fieldColor="@color/colorWhite"
+            app:highlightColor="@color/colorAccent"
+            app:highlightType="allFields"
+            app:isCursorEnabled="true"
+            app:isCustomBackground="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_code"
+            app:lineThickness="1dp"
+            app:noOfFields="4" />
+
+
+
+        <!--        sign up button-->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_verify"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:layout_marginEnd="120dp"
+            android:layout_marginTop="@dimen/margin_16"
+            android:fontFamily="@font/sans_bold"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="@string/verify"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/textParagraphTitle"
+            app:backgroundTint="@color/colorButton"
+            app:cornerRadius="3dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lineField" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

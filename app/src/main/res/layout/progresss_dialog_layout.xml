@@ -11,9 +11,9 @@
             android:id="@+id/text_view_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/please_wait"
+
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-            android:textColor="@color/text_color"
+
             android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/progress_bar"
             app:layout_constraintEnd_toEndOf="parent"
@@ -39,9 +39,9 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/margin_16"
             android:layout_marginEnd="@dimen/margin_16"
-            android:text="@string/loading"
+
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-            android:textColor="@color/disabledGray"
+
             android:textSize="@dimen/text_small_body"
             app:layout_constraintBottom_toBottomOf="@+id/progress_bar"
             app:layout_constraintEnd_toEndOf="parent"

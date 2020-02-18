@@ -1,26 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#222C6B</color>
-    <color name="colorPrimaryDark">#222C6B</color>
+    <color name="colorPrimary">#1E1F36</color>
+    <color name="colorPrimaryDark">#1E1F36</color>
     <color name="colorAccent">#D81B60</color>
-    <color name="app_background">#222C6B</color>
-    <color name="color_white">#ffffff</color>
-    <color name="color_bg_button">#19A15F</color>
-
-    <color name="stick_color">#aaaaaa</color>
-
     <color name="transparent">#00000000</color>
-    <color name="color_black">#000000</color>
-    <color name="disabledGray">#BCBCBC</color>
 
 
-    <color name="grid_color">#dddddd</color>
-    <color name="display_color">#dddddd</color>
-    <color name="card_background">#1B2036</color>
-    <color name="text_color">#A5A6A7</color>
-    <color name="bg_view">#216DFD</color>
-    <color name="bg_button">#F8D320</color>
-    <color name="background_tint_color">#F8D320</color>
+    <!--    extra color..-->
+    <color name="app_background">#1E1F36</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorPasswrod">#8284AC</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorText">#52548C</color>
+    <color name="colorButton">#E7921E</color>
+    <color name="colorTint">#8284AC</color>
+    
+     <!--    on boarding color-->
+    <color name="color_dots">#2E2F52</color>
+    <color name="color_selected">#52548C</color>
 
 
 </resources>

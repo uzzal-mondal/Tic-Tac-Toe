@@ -36,7 +36,7 @@ class DottedLineView : View {
 
     private fun init() {
         mPaint = Paint()
-        mPaint?.color = ViewUtils.getColor(R.color.color_white)
+        mPaint?.color = ViewUtils.getColor(R.color.colorWhite)
         mPaint?.style = Paint.Style.STROKE
         mPaint?.strokeWidth = 4F
         mPaint?.pathEffect = DashPathEffect(floatArrayOf(5f, 10f), 0f)

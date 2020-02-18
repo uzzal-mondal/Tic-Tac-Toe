@@ -9,7 +9,6 @@ import com.bumptech.glide.request.RequestListener
 import com.bumptech.glide.request.RequestOptions
 import com.itechsofsolutions.tictactoe.BaseApplication
 import com.itechsofsolutions.tictactoe.R
-
 import java.util.concurrent.ExecutionException
 
 
@@ -184,7 +183,7 @@ class GlideUtils private constructor() {
                 .asBitmap()
                 .load(source)
                 .apply((RequestOptions()
-                    .placeholder(R.drawable.ic_logo)))
+                    .placeholder(R.drawable.placeholder)))
                 .into(imageView)
         }
         fun glideWithPeople(imageView: ImageView, source: Any) {

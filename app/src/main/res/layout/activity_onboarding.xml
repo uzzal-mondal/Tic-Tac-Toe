@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_background">
+
+
+
+        <com.itechsofsolutions.tictactoe.ui.base.widget.CustomStatusBarView
+            android:id="@+id/status_bar_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+            android:id="@+id/indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            app:dotsColor="@color/color_dots"
+            app:dotsCornerRadius="8dp"
+            app:dotsSize="10dp"
+            app:dotsStrokeWidth="2dp"
+            app:dotsSpacing="4dp"
+            app:progressMode="true"
+            app:selectedDotColor="#52548C"
+            app:stiffness="300"
+            app:dotsStrokeColor="@color/colorBlack"
+            app:dampingRatio="1"
+            app:dotsWidthFactor="1"
+            app:layout_constraintTop_toBottomOf="@+id/viewPager"
+            app:layout_constraintBottom_toTopOf="@+id/viewPager"
+            app:layout_constraintEnd_toEndOf="@id/viewPager"
+            app:layout_constraintStart_toStartOf="@id/viewPager"/>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_next"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="104dp"
+            android:layout_marginTop="@dimen/margin_8"
+            android:layout_marginEnd="104dp"
+            android:layout_marginBottom="@dimen/margin_64"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="@string/next"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_body"
+            app:backgroundTint="@color/colorButton"
+            app:cornerRadius="4dp"
+            app:fontFamily="@font/sans_regular"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <View
+            android:layout_width="124dp"
+            android:layout_height="3dp"
+            android:background="@color/colorWhite"
+            android:layout_marginBottom="@dimen/margin_16"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
+

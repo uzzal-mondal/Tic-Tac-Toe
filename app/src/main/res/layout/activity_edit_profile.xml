@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ECECF3"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/includelayout_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_64"
+            layout="@layout/toolbar_edit_profile"
+            android:layout_marginBottom="32dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/image_view_profile"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="120dp"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/icon_man" />
+
+        <!--        name label-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edit_text_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_32"
+            android:layout_marginTop="@dimen/margin_16"
+            android:layout_marginEnd="@dimen/margin_24"
+            android:layout_marginBottom="@dimen/margin_8"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="@string/name"
+            android:textColorHint="@color/colorText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_view_profile">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:backgroundTint="@color/colorTint"
+                android:text="@string/maria_hernandez"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_body" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <!--  Email Label -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edit_text_email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_32"
+            android:layout_marginTop="@dimen/margin_24"
+            android:layout_marginEnd="@dimen/margin_32"
+            android:layout_marginBottom="@dimen/margin_8"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="@string/email"
+            android:textColorHint="@color/colorText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_text_name"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:text="@string/mariaharnandez_gmail_com"
+                android:backgroundTint="@color/colorTint"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_body"
+                app:fontFamily="@font/sans_regular" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--  phone Label -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edit_text_phone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_32"
+            android:layout_marginTop="@dimen/margin_24"
+            android:layout_marginEnd="@dimen/margin_32"
+            android:layout_marginBottom="@dimen/margin_8"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="@string/phone"
+            android:textColorHint="@color/colorText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_text_email"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="phone"
+                android:text="@string/_015"
+                android:textColor="@color/colorBlack"
+                android:backgroundTint="@color/colorTint"
+                android:textSize="@dimen/text_body"
+                app:fontFamily="@font/sans_regular" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--  phone Label -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edit_text_country"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_32"
+            android:layout_marginTop="@dimen/margin_24"
+            android:layout_marginEnd="@dimen/margin_32"
+            android:layout_marginBottom="@dimen/margin_8"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="@string/country"
+            android:textColorHint="@color/colorText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_text_phone">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:text="United State"
+                android:textColor="@color/colorBlack"
+                android:backgroundTint="@color/colorTint"
+                android:textSize="@dimen/text_body"
+                app:fontFamily="@font/sans_regular" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+        <!--        sign up button-->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_save_changes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:layout_marginEnd="120dp"
+            android:layout_marginTop="@dimen/margin_16"
+
+
+            android:fontFamily="@font/sans_bold"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="@string/save_changes"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/textParagraphTitle"
+            app:backgroundTint="@color/colorButton"
+            app:cornerRadius="3dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_text_country" />
+
+
+        
+        <View
+            android:layout_width="124dp"
+            android:layout_height="4dp"
+            android:background="@color/colorBlack"
+            android:layout_marginBottom="@dimen/margin_8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+
+
+
+
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
+
+

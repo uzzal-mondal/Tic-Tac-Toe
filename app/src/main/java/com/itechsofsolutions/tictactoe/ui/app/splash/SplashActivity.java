@@ -1,63 +1,46 @@
 package com.itechsofsolutions.tictactoe.ui.app.splash;
-
-import android.app.Activity;
-import android.content.Intent;
-import android.os.Build;
+import android.app.NotificationManager;
+import android.content.Context;
 import android.os.Handler;
-import android.view.View;
-import android.view.Window;
-import android.view.WindowManager;
-
-import androidx.core.content.ContextCompat;
-
 import com.itechsofsolutions.tictactoe.R;
-import com.itechsofsolutions.tictactoe.ui.app.team.TeamSelectionActivity;
+import com.itechsofsolutions.tictactoe.ui.app.onboarding.OnboardingActivity;
 import com.itechsofsolutions.tictactoe.ui.base.component.BaseActivity;
-
+import com.itechsofsolutions.tictactoe.utils.helper.Constants;
+import com.itechsoftsolution.ebay.utils.helper.SharedPrefUtils;
 import org.jetbrains.annotations.NotNull;
 
-public class SplashActivity  extends
-        BaseActivity<SplashSelectionMvpView,SplashSelectionPresenter> {
+public class SplashActivity extends BaseActivity<SplashMvpView,SplashPresenter> {
 
 
     @Override
     protected int getLayoutResourceId() {
         return R.layout.activity_splash;
-       // return setTheme(R.style.AppTheme);
     }
 
     @NotNull
     @Override
-    protected SplashSelectionPresenter getActivityPresenter() {
-        return new SplashSelectionPresenter();
+    protected SplashPresenter getActivityPresenter() {
+        return new SplashPresenter();
     }
 
     @Override
     protected void startUI() {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-            getWindow()
-                    .getDecorView()
-                    .setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
-        }
 
-        setStatusBarColor(this,R.color.app_background);
-
-
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                startActivity(new Intent(SplashActivity.this,
-                        TeamSelectionActivity.class));
+        ((NotificationManager)getSystemService(Context.NOTIFICATION_SERVICE)).cancelAll();
+        new Handler().postDelayed(() -> {
+            String lang = SharedPrefUtils.INSTANCE.readString(Constants.PreferenceKeys.LANGUAGE_CODE, "");
+            if (lang.isEmpty()) {
+                SharedPrefUtils.INSTANCE.write(Constants.PreferenceKeys.LANGUAGE_CODE, "en");
+            }
+            if (SharedPrefUtils.INSTANCE.readBoolean(Constants.PreferenceKeys.IS_LOGGED_IN)) {
+                OnboardingActivity.runActivity(SplashActivity.this);
+                finish();
+            } else {
+                OnboardingActivity.runActivity(SplashActivity.this);
                 finish();
             }
-        },2000);
+        }, Constants.Default.DELAY_SPLASH);
 
-    }
-
-    public void setStatusBarColor(Activity activity, int colorRes){
-        Window window = activity.getWindow();
-        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-        window.setStatusBarColor(ContextCompat.getColor(activity,colorRes));
     }
 
     @Override
