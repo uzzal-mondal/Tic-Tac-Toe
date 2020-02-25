@@ -42,6 +42,7 @@
 
 
         <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_view_logo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="40dp"

@@ -11,6 +11,7 @@ import com.itechsofsolutions.tictactoe.R;
 import com.itechsofsolutions.tictactoe.databinding.ActivityContainerBinding;
 import com.itechsofsolutions.tictactoe.ui.app.activityfragment.ActivityFragment;
 import com.itechsofsolutions.tictactoe.ui.app.categoriesfragment.CategoriesFragment;
+import com.itechsofsolutions.tictactoe.ui.app.coinfragment.CoinFragment;
 import com.itechsofsolutions.tictactoe.ui.app.homefragment.HomeFragment;
 import com.itechsofsolutions.tictactoe.ui.app.sciencefragment.ScienceFragment;
 import com.itechsofsolutions.tictactoe.ui.base.component.BaseActivity;
@@ -107,8 +108,8 @@ public class ContainerActivity extends BaseActivity<ContainerMvpView, ContainerP
 
     }
     private void initListener(){
-        setClickListener(mBinding.imageViewNewsFeed, mBinding.imageViewBuyCoin,
-                mBinding.imageViewCategories, mBinding.imageViewActivity);
+        setClickListener(mBinding.imageViewLogo, mBinding.imageViewNewsFeed,
+                mBinding.imageViewCategories, mBinding.imageViewBuyCoin, mBinding.imageViewActivity);
 
 
     }
@@ -119,13 +120,20 @@ public class ContainerActivity extends BaseActivity<ContainerMvpView, ContainerP
         super.onClick(view);
 
         switch (view.getId()){
-            case R.id.image_view_news_feed:
+
+            case R.id.image_view_logo:
                 isHomeFragment  = false;
                 commitFragment(R.id.constraint_layout_full_fragment_container,new HomeFragment());
                 break;
 
+
+            case R.id.image_view_news_feed:
+               commitFragment(R.id.constraint_layout_full_fragment_container,new ScienceFragment());
+                break;
+
+
             case R.id.image_view_buy_coin:
-                commitFragment(R.id.constraint_layout_full_fragment_container,new ScienceFragment());
+                commitFragment(R.id.constraint_layout_full_fragment_container,new CoinFragment());
                 break;
 
 

@@ -80,12 +80,12 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/text_coin_details">
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:drawableRight="@drawable/bg_spinner_address">
+           <com.google.android.material.textfield.TextInputEditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:drawableRight="@drawable/bg_spinner_address">
 
-            </com.google.android.material.textfield.TextInputEditText>
+           </com.google.android.material.textfield.TextInputEditText>
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -128,33 +128,33 @@
             app:layout_constraintTop_toBottomOf="@+id/outline_coin_amount"/>
 
 
-        <RadioGroup
-            android:id="@+id/radio_group"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/margin_16"
-            android:orientation="horizontal"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/text_view_payment">
+       <RadioGroup
+           android:id="@+id/radio_group"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="@dimen/margin_16"
+           android:orientation="horizontal"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/text_view_payment">
 
 
-            <RadioButton
-                android:id="@+id/radioMale"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="@dimen/margin_24"
-                android:text=" Payonr "
-                android:checked="false"
-                android:textSize="@dimen/text_body_14"/>
+           <RadioButton
+               android:id="@+id/radioMale"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginRight="@dimen/margin_24"
+               android:text=" Payonr "
+               android:checked="false"
+               android:textSize="@dimen/text_body_14"/>
 
-            <RadioButton
-                android:id="@+id/radioFemale"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:text=" Paypal"
-                android:checked="false"
-                android:textSize="@dimen/text_body_14"/>
-        </RadioGroup>
+           <RadioButton
+               android:id="@+id/radioFemale"
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:text=" Paypal"
+               android:checked="false"
+               android:textSize="@dimen/text_body_14"/>
+       </RadioGroup>
 
 
         <androidx.appcompat.widget.AppCompatTextView

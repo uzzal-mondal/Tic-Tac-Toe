@@ -25,7 +25,7 @@
                 android:layout_height="20dp"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="100dp"
-                android:src="@drawable/ic_multiply"/>
+                android:src="@drawable/ic_search"/>
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="wrap_content"

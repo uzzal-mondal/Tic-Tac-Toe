@@ -191,6 +191,7 @@ dependencies {
 
     //artiste
     implementation 'me.mattlogan.artiste:artiste:4.0.0'
+   // implementation 'com.google.android.material:material:1.2.0-alpha03'
 }
 
 //apply plugin: 'com.google.gms.google-services'

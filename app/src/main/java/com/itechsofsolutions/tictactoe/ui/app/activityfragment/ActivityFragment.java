@@ -39,12 +39,12 @@ implements HomeMvpView {
     protected void stopUI() {
 
 
-
     }
-    private void inItAdapter(){
 
+    private void inItAdapter(){
         activityAdapter = new ActivityAdapter(getActivity());
-        mBinding.recyclerActivity.setLayoutManager(new LinearLayoutManager(getActivity(),LinearLayoutManager.VERTICAL,false));
+        mBinding.recyclerActivity.setLayoutManager(new LinearLayoutManager(getActivity(),
+                LinearLayoutManager.VERTICAL,false));
         mBinding.recyclerActivity.setAdapter(activityAdapter);
     }
 
@@ -52,7 +52,7 @@ implements HomeMvpView {
     @Override
     public void onBackPressed() {
 
-    }
 
+    }
 
 }
