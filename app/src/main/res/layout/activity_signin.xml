@@ -19,7 +19,7 @@
             android:gravity="center"
             android:text="@string/sign_in"
             android:textColor="@color/colorWhite"
-            android:textSize="@dimen/text_upper_body"
+            android:textSize="@dimen/text_upper_body_24"
             app:fontFamily="@font/sans_bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -36,7 +36,7 @@
             android:gravity="center"
             android:text="@string/sign_in_your_account"
             android:textColor="@color/colorWhite"
-            android:textSize="@dimen/text_body"
+            android:textSize="@dimen/text_body_14"
             app:fontFamily="@font/sans_regular"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -71,7 +71,7 @@
                 android:backgroundTint="@color/colorTint"
                 android:inputType="textEmailAddress"
                 android:textColor="@color/colorWhite"
-                android:textSize="@dimen/text_body"
+                android:textSize="@dimen/text_body_14"
                 app:fontFamily="@font/sans_regular" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -105,7 +105,7 @@
                 android:backgroundTint="@color/colorTint"
                 android:inputType="textPassword"
                 android:textColor="@color/colorWhite"
-                android:textSize="@dimen/text_body"
+                android:textSize="@dimen/text_body_14"
                 app:fontFamily="@font/sans_regular" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -121,7 +121,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             android:text="@string/forgot_password"
             app:fontFamily="@font/sans_regular"
-            android:textSize="@dimen/text_body"
+            android:textSize="@dimen/text_body_14"
             android:textColor="@color/colorText"
             android:gravity="end"
             app:layout_constraintTop_toBottomOf="@+id/sign_in_password"/>
@@ -141,7 +141,7 @@
             android:text="@string/sign_in"
             android:textAllCaps="false"
             android:textColor="@color/colorWhite"
-            android:textSize="@dimen/text_body"
+            android:textSize="@dimen/text_body_14"
             app:backgroundTint="@color/colorButton"
             app:cornerRadius="3dp"
             app:layout_constraintWidth_percent="0.4"
@@ -161,7 +161,7 @@
             android:ellipsize="end"
 
             android:text="@string/already_have_an_account"
-            android:textSize="@dimen/text_body"
+            android:textSize="@dimen/text_body_14"
             app:fontFamily="@font/sans_regular"
 
             android:maxLines="1"

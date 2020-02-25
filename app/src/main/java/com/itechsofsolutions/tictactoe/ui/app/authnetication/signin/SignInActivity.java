@@ -7,11 +7,12 @@ import android.view.View;
 import com.itechsofsolutions.tictactoe.R;
 import com.itechsofsolutions.tictactoe.databinding.ActivitySigninBinding;
 import com.itechsofsolutions.tictactoe.ui.app.authnetication.signup.SignUpActivity;
+import com.itechsofsolutions.tictactoe.ui.app.container.ContainerActivity;
 import com.itechsofsolutions.tictactoe.ui.base.component.BaseActivity;
 
 import org.jetbrains.annotations.NotNull;
 
-public class SignInActivity extends BaseActivity<SignInMvpView, SignInPresenter> {
+public class SignInActivity extends BaseActivity<SignInMvpView,SignInPresenter> {
 
     ActivitySigninBinding mBinding;
     public static SignInActivity signInActivity;
@@ -19,7 +20,6 @@ public class SignInActivity extends BaseActivity<SignInMvpView, SignInPresenter>
     public static void runActivity(Activity mActivity) {
         mActivity.startActivity(new Intent(mActivity, SignInActivity.class));
     }
-
 
     @Override
     protected int getLayoutResourceId() {
@@ -37,7 +37,6 @@ public class SignInActivity extends BaseActivity<SignInMvpView, SignInPresenter>
         mBinding = (ActivitySigninBinding) getViewDataBinding();
         signInActivity = this;
         inItClickListener();
-
     }
 
 
@@ -47,7 +46,8 @@ public class SignInActivity extends BaseActivity<SignInMvpView, SignInPresenter>
     }
 
     public void inItClickListener() {
-        setClickListener(mBinding.textViewSignUps);
+        setClickListener(mBinding.textViewSignUps,mBinding.buttonSignIn);
+
     }
 
     @Override
@@ -55,6 +55,8 @@ public class SignInActivity extends BaseActivity<SignInMvpView, SignInPresenter>
         super.onClick(view);
         if (view.getId() == R.id.text_view_signUps) {
             SignUpActivity.runActivity(this);
+        }else if (view.getId() == R.id.button_sign_in){
+            ContainerActivity.runActivity(this);
         }
     }
 }

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_background"
+    android:focusableInTouchMode="false">
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_view_general"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_8"
+        android:fontFamily="@font/sans_bold"
+        android:text="General Knowledge"
+        android:textColor="#1E1F36"
+        android:textSize="@dimen/text_body_16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_view_see_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_8"
+        android:fontFamily="@font/sans_bold"
+        android:text="See All"
+        android:textColor="#1E1F36"
+        android:textSize="@dimen/text_body_16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_general"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="@dimen/margin_8"
+        android:layout_marginEnd="@dimen/margin_8"
+
+        app:layout_constraintTop_toBottomOf="@+id/text_view_general"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_view_entertainment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_8"
+        android:fontFamily="@font/sans_bold"
+        android:text="Entertainment"
+        android:textColor="#1E1F36"
+        android:textSize="@dimen/text_body_16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recycler_general" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_view_second_see_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_8"
+        android:fontFamily="@font/sans_bold"
+        android:text="See All"
+        android:textColor="#1E1F36"
+        android:textSize="@dimen/text_body_16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recycler_general" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_entertainment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="@dimen/margin_8"
+        android:layout_marginEnd="@dimen/margin_8"
+
+        app:layout_constraintTop_toBottomOf="@+id/text_view_entertainment"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_view_food"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_8"
+        android:fontFamily="@font/sans_bold"
+        android:text="Food Drink"
+        android:textColor="#1E1F36"
+        android:textSize="@dimen/text_body_16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recycler_entertainment" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_view_third_see_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_8"
+        android:fontFamily="@font/sans_bold"
+        android:text="See All"
+        android:textColor="#1E1F36"
+        android:textSize="@dimen/text_body_16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recycler_entertainment" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_food"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="@dimen/margin_8"
+        android:layout_marginEnd="@dimen/margin_8"
+
+        app:layout_constraintTop_toBottomOf="@+id/text_view_food"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_view_science"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_8"
+        android:fontFamily="@font/sans_bold"
+        android:text="Science"
+        android:textColor="#1E1F36"
+        android:textSize="@dimen/text_body_16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recycler_food" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_view_fourth_see_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_8"
+        android:fontFamily="@font/sans_bold"
+        android:text="See All"
+        android:textColor="#1E1F36"
+        android:textSize="@dimen/text_body_16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recycler_food" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_science"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="@dimen/margin_8"
+        android:layout_marginEnd="@dimen/margin_8"
+
+        app:layout_constraintTop_toBottomOf="@+id/text_view_science"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

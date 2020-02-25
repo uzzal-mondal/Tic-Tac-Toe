@@ -3,13 +3,13 @@ package com.itechsofsolutions.tictactoe.ui.app.authnetication.signup;
 import android.app.Activity;
 import android.content.Intent;
 import android.view.View;
-
 import com.itechsofsolutions.tictactoe.R;
 import com.itechsofsolutions.tictactoe.databinding.ActivitySignupBinding;
 import com.itechsofsolutions.tictactoe.ui.app.authnetication.signin.SignInActivity;
 import com.itechsofsolutions.tictactoe.ui.base.component.BaseActivity;
 import org.jetbrains.annotations.NotNull;
-public class SignUpActivity extends BaseActivity<SignUpMvpView,SignUpPresenter>implements SignUpMvpView{
+
+public class SignUpActivity extends BaseActivity<SignUpMvpView,SignUpPresenter>{
 
    ActivitySignupBinding mBinding;
    public static SignUpActivity signUpActivity;

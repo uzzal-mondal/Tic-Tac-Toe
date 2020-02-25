@@ -42,7 +42,7 @@
 
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
 
-            android:textSize="@dimen/text_small_body"
+            android:textSize="@dimen/text_small_body_12"
             app:layout_constraintBottom_toBottomOf="@+id/progress_bar"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/progress_bar"

@@ -57,6 +57,18 @@ android {
         checkReleaseBuilds false
     }
 
+   /* allprojects {
+        repositories {
+
+            maven {
+                url 'https://jitpack.io' }
+        }
+    }*/
+
+    repositories {
+        jcenter()
+    }
+
 }
 
 dependencies {
@@ -124,7 +136,12 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.0.0-beta3'
 
     // Circular ImageView
-    implementation 'com.mikhaellopez:circularimageview:3.2.0'
+     implementation 'com.mikhaellopez:circularimageview:3.2.0'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    //implementation 'de.hdodenhof:circleimageview:3.1.0'
+    //implementation 'com.github.abdularis:circularimageview:1.4'
+
+
 
     // Glide (Image loader)
     implementation 'com.github.bumptech.glide:glide:4.9.0'
@@ -163,6 +180,17 @@ dependencies {
 
     //pin password
     implementation 'com.poovam:pin-edittext-field:1.2.1'
+
+    //coverflow
+    implementation 'com.github.moondroid.coverflow:library:1.0'
+
+
+    //bottm navigation.
+    //implementation 'com.etebarian:meow-bottom-navigation:1.0.0'
+
+
+    //artiste
+    implementation 'me.mattlogan.artiste:artiste:4.0.0'
 }
 
 //apply plugin: 'com.google.gms.google-services'

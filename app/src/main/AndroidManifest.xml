@@ -18,6 +18,8 @@
        <activity android:name=".ui.app.onboarding.OnboardingActivity"/>
        <activity android:name=".ui.app.authnetication.signin.SignInActivity"/>
         <activity android:name=".ui.app.authnetication.signup.SignUpActivity"/>
+        <activity android:name=".ui.app.container.ContainerActivity"/>
+
 
         <activity android:name=".ui.app.splash.SplashActivity">
             <intent-filter>
@@ -28,7 +30,6 @@
         </activity>
 
         <activity android:name=".MainActivity"/>
-
 
 
 

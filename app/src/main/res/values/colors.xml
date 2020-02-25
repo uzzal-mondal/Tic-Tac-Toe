@@ -8,16 +8,23 @@
 
     <!--    extra color..-->
     <color name="app_background">#1E1F36</color>
+    <color name="home_background">#ECECF3</color>
     <color name="colorWhite">#ffffff</color>
+    <color name="colorTextBody">#38394E</color>
     <color name="colorPasswrod">#8284AC</color>
     <color name="colorBlack">#000000</color>
     <color name="colorText">#52548C</color>
     <color name="colorButton">#E7921E</color>
     <color name="colorTint">#8284AC</color>
+
+
     
      <!--    on boarding color-->
     <color name="color_dots">#2E2F52</color>
     <color name="color_selected">#52548C</color>
+
+    <color name="edit_text_search_color">#EFF5F5</color>
+    <color name="text_color_body">#1E1F36</color>
 
 
 </resources>

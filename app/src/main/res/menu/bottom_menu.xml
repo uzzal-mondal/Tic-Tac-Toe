@@ -4,28 +4,25 @@
 
     <item
         android:id="@+id/action_home"
+        android:icon="@drawable/icon_chat"
         android:checked="true"
-        android:icon="@drawable/ic_news_feed"
-        android:title=""
-        app:showAsAction="always" />
+        app:showAsAction="always"
+        android:title=""/>
 
     <item
         android:id="@+id/action_buy_coin"
-        android:icon="@drawable/ic_buycoin"
-        app:showAsAction="always"
-        android:title="" />
+        android:icon="@drawable/ic_hand"
+        android:title=""/>
 
     <item
         android:id="@+id/action_search"
-        android:icon="@drawable/ic_buycoin"
-        app:showAsAction="always"
-        android:title="" />
+        android:icon="@drawable/ic_news_feed"
+        android:title=""/>
 
     <item
         android:id="@+id/action_category"
-        android:icon="@drawable/ic_buycoin"
-        app:showAsAction="always"
-        android:title="" />
+        android:icon="@drawable/ic_news_feed"
+        android:title=""/>
 
 
 </menu>

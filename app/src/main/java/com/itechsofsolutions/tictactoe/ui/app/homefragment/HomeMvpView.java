@@ -1,4 +1,4 @@
-package com.itechsofsolutions.tictactoe.ui.app.home;
+package com.itechsofsolutions.tictactoe.ui.app.homefragment;
 
 import com.itechsofsolutions.tictactoe.ui.base.callback.MvpView;
 

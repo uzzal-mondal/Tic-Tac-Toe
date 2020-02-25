@@ -66,7 +66,7 @@
             android:text="@string/next"
             android:textAllCaps="false"
             android:textColor="@color/colorWhite"
-            android:textSize="@dimen/text_body"
+            android:textSize="@dimen/text_body_14"
             app:backgroundTint="@color/colorButton"
             app:cornerRadius="4dp"
             app:fontFamily="@font/sans_regular"

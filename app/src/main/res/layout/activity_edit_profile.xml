@@ -13,7 +13,7 @@
             android:id="@+id/includelayout_id"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/margin_64"
+
             layout="@layout/toolbar_edit_profile"
             android:layout_marginBottom="32dp"
             app:layout_constraintStart_toStartOf="parent"
@@ -56,7 +56,7 @@
                 android:backgroundTint="@color/colorTint"
                 android:text="@string/maria_hernandez"
                 android:textColor="@color/colorBlack"
-                android:textSize="@dimen/text_body" />
+                android:textSize="@dimen/text_body_14" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -88,7 +88,7 @@
                 android:text="@string/mariaharnandez_gmail_com"
                 android:backgroundTint="@color/colorTint"
                 android:textColor="@color/colorBlack"
-                android:textSize="@dimen/text_body"
+                android:textSize="@dimen/text_body_14"
                 app:fontFamily="@font/sans_regular" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -119,7 +119,7 @@
                 android:text="@string/_015"
                 android:textColor="@color/colorBlack"
                 android:backgroundTint="@color/colorTint"
-                android:textSize="@dimen/text_body"
+                android:textSize="@dimen/text_body_14"
                 app:fontFamily="@font/sans_regular" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -149,7 +149,7 @@
                 android:text="United State"
                 android:textColor="@color/colorBlack"
                 android:backgroundTint="@color/colorTint"
-                android:textSize="@dimen/text_body"
+                android:textSize="@dimen/text_body_14"
                 app:fontFamily="@font/sans_regular" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -173,7 +173,7 @@
             android:text="@string/save_changes"
             android:textAllCaps="false"
             android:textColor="@color/colorWhite"
-            android:textSize="@dimen/textParagraphTitle"
+            android:textSize="@dimen/text_body_16"
             app:backgroundTint="@color/colorButton"
             app:cornerRadius="3dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -181,7 +181,6 @@
             app:layout_constraintTop_toBottomOf="@+id/edit_text_country" />
 
 
-        
         <View
             android:layout_width="124dp"
             android:layout_height="4dp"
@@ -190,14 +189,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"/>
-
-
-
-
-
-
-
-
 
 
 

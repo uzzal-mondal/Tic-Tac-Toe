@@ -56,9 +56,7 @@
     <string name="intent_type_image" translatable="false">image/*</string>
     <string name="intent_extra_return_data" translatable="false">return-data</string>
     <string name="file_provider_authority" translatable="false">com.itechsoftsolution.ebay.fileprovider</string>
-
-
-
+    <string name="clever_bot_benders">Clever Bot benders\n 20 hrs 24 min left</string>
 
 
 </resources>
