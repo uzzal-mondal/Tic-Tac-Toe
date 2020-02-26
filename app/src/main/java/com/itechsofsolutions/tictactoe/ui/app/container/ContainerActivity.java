@@ -51,7 +51,6 @@ public class ContainerActivity extends BaseActivity<ContainerMvpView, ContainerP
         mBinding = (ActivityContainerBinding) getViewDataBinding();
         containerActivity = this;
 
-        listenerBottomNavegation();
         initListener();
         isHomeFragment = true;
         commitFragment(R.id.constraint_layout_full_fragment_container, new HomeFragment());
@@ -61,9 +60,9 @@ public class ContainerActivity extends BaseActivity<ContainerMvpView, ContainerP
     @Override
     protected void stopUI() {
 
-    if (containerActivity!=null){
-        containerActivity.finish();
-    }
+        if (containerActivity != null) {
+            containerActivity.finish();
+        }
 
     }
 
@@ -72,44 +71,11 @@ public class ContainerActivity extends BaseActivity<ContainerMvpView, ContainerP
         super.onResume();
     }
 
-    private void listenerBottomNavegation(){
-       /* mBinding.bottomImage.setOnNavigationItemSelectedListener(menuItem -> {
 
-           int size =  mBinding.bottomNavigation.getMenu().size();
-            for (int i = 0; i < size; i++) {
-                mBinding.bottomNavigation.getMenu().getItem(i).setCheckable(true);
-            }
-
-            switch (menuItem.getItemId()){
-
-                case R.id.image_view_news_feed:
-                 isHomeFragment = false;
-                 commitFragment(R.id.constraint_layout_full_fragment_container,new HomeFragment());
-                 break;
-            }
-            menuItem.setCheckable(true);
-
-            return false;
-        });*/
-
-       /*mBinding.bottomImage.setOnClickListener(new View.OnClickListener() {
-           @Override
-           public void onClick(View v) {
-               switch (v.getId()){
-
-                   case R.id.image_view_news_feed:
-                       isHomeFragment = false;
-                       commitFragment(R.id.constraint_layout_full_fragment_container,new HomeFragment());
-                       break;
-               }
-           }
-       });*/
-
-
-    }
-    private void initListener(){
+    private void initListener() {
         setClickListener(mBinding.imageViewLogo, mBinding.imageViewNewsFeed,
-                mBinding.imageViewCategories, mBinding.imageViewBuyCoin, mBinding.imageViewActivity);
+                mBinding.imageViewCategories, mBinding.imageViewBuyCoin,
+                mBinding.imageViewActivity);
 
 
     }
@@ -119,35 +85,32 @@ public class ContainerActivity extends BaseActivity<ContainerMvpView, ContainerP
     public void onClick(@NotNull View view) {
         super.onClick(view);
 
-        switch (view.getId()){
+        switch (view.getId()) {
 
             case R.id.image_view_logo:
-                isHomeFragment  = false;
-                commitFragment(R.id.constraint_layout_full_fragment_container,new HomeFragment());
+                isHomeFragment = false;
+                commitFragment(R.id.constraint_layout_full_fragment_container, new HomeFragment());
                 break;
 
 
             case R.id.image_view_news_feed:
-               commitFragment(R.id.constraint_layout_full_fragment_container,new ScienceFragment());
+                commitFragment(R.id.constraint_layout_full_fragment_container, new ScienceFragment());
                 break;
 
 
             case R.id.image_view_buy_coin:
-                commitFragment(R.id.constraint_layout_full_fragment_container,new CoinFragment());
+                commitFragment(R.id.constraint_layout_full_fragment_container, new CoinFragment());
                 break;
 
 
             case R.id.image_view_categories:
-                commitFragment(R.id.constraint_layout_full_fragment_container,new CategoriesFragment());
+                commitFragment(R.id.constraint_layout_full_fragment_container, new CategoriesFragment());
                 break;
 
 
             case R.id.image_view_activity:
-                commitFragment(R.id.constraint_layout_full_fragment_container,new ActivityFragment());
+                commitFragment(R.id.constraint_layout_full_fragment_container, new ActivityFragment());
                 break;
-
-
-
 
 
         }

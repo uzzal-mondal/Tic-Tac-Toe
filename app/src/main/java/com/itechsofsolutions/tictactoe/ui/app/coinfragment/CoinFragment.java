@@ -1,29 +1,16 @@
 package com.itechsofsolutions.tictactoe.ui.app.coinfragment;
-import android.content.Context;
-
-import androidx.viewpager.widget.ViewPager;
 
 import com.google.android.material.tabs.TabLayout;
 import com.itechsofsolutions.tictactoe.R;
 import com.itechsofsolutions.tictactoe.databinding.FragmentCoinBinding;
-import com.itechsofsolutions.tictactoe.ui.base.callback.MvpView;
 import com.itechsofsolutions.tictactoe.ui.base.component.BaseFragment;
 
 import org.jetbrains.annotations.NotNull;
 
-public class CoinFragment extends BaseFragment<CoinMvpView,CoinPresenter>
-        implements MvpView {
+public class CoinFragment extends BaseFragment<CoinMvpView, CoinPresenter> {
 
     FragmentCoinBinding mBinding;
-    ViewPagerAdapter pagerAdapter;
-
-    Context context;
-
-    CoinFragment(Context context){
-        this.context = context;
-    }
-
-
+    ViewPagerAdapter viewPagerAdapter;
 
     @Override
     protected int getLayoutId() {
@@ -38,12 +25,12 @@ public class CoinFragment extends BaseFragment<CoinMvpView,CoinPresenter>
 
     @Override
     protected void startUI() {
-        mBinding = (FragmentCoinBinding) getViewDataBinding();
-        inItViewPager();
-        initTabLayout();
 
-        mBinding.tabLayout.setupWithViewPager(mBinding.viewPagerBottom);
-        //setClickListener(mBinding.tabCoin,mBinding.tabCoinHistory);
+        mBinding = (FragmentCoinBinding) getViewDataBinding();
+        mBinding.tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
+
+        initTabLayout();
+        inItViewPager();
 
     }
 
@@ -52,50 +39,21 @@ public class CoinFragment extends BaseFragment<CoinMvpView,CoinPresenter>
 
     }
 
-   /* @Override
-    public void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-    }
+    public void inItViewPager() {
 
-    @Nullable
-    @Override
-    public View onCreateView(@NotNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.item_buycoin,container,false);
-    }*/
-
-    public void inItViewPager(){
-
-        pagerAdapter = new ViewPagerAdapter(getFragmentManager(),2);
-        /*pagerAdapter.addFragment(new BuyCoinFragment(),"Buy Coin");
-        pagerAdapter.addFragment(new BuyHistoryFragment(),"Buy History");*/
-        mBinding.viewPagerBottom.setAdapter(pagerAdapter);
-       /* mBinding.viewPagerBottom.addOnPageChangeListener(new TabLayout.
-                TabLayoutOnPageChangeListener(mBinding.tabLayout));*/
-
-       mBinding.viewPagerBottom.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
-           @Override
-           public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
-
-           }
-
-           @Override
-           public void onPageSelected(int position) {
-
-
-           }
-
-           @Override
-           public void onPageScrollStateChanged(int state) {
-
-           }
-       });
+        viewPagerAdapter = new ViewPagerAdapter(getActivity().getSupportFragmentManager(),
+                mBinding.tabLayout.getTabCount());
+        mBinding.viewPagerBottom.setAdapter(viewPagerAdapter);
+        mBinding.viewPagerBottom.addOnPageChangeListener(new TabLayout.
+                TabLayoutOnPageChangeListener(mBinding.tabLayout));
 
     }
 
-    public void initTabLayout(){
+    public void initTabLayout() {
         mBinding.tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
+
                 mBinding.viewPagerBottom.setCurrentItem(tab.getPosition());
 
             }
@@ -110,14 +68,12 @@ public class CoinFragment extends BaseFragment<CoinMvpView,CoinPresenter>
 
             }
         });
-
-
-
     }
+
+
 
     @Override
     public void onBackPressed() {
 
     }
-
 }

@@ -1,27 +1,41 @@
 package com.itechsofsolutions.tictactoe.ui.app.buycoinfragment;
 
-import android.os.Bundle;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
-
 import com.itechsofsolutions.tictactoe.R;
+import com.itechsofsolutions.tictactoe.databinding.FragmentBuyCoinBinding;
+import com.itechsofsolutions.tictactoe.ui.base.component.BaseFragment;
 
-public class BuyCoinFragment extends Fragment {
+import org.jetbrains.annotations.NotNull;
 
-   public BuyCoinFragment(){
+public class BuyCoinFragment extends BaseFragment<BuyCoinMvpView, BuyCoinPresenter>{
+
+
+    FragmentBuyCoinBinding mBinding;
+
+
+    @Override
+    protected int getLayoutId() {
+        return R.layout.fragment_buy_coin;
+    }
+
+    @NotNull
+    @Override
+    protected BuyCoinPresenter getFragmentPresenter() {
+        return new BuyCoinPresenter();
+    }
+
+    @Override
+    protected void startUI() {
+        mBinding = (FragmentBuyCoinBinding) getViewDataBinding();
+    }
+
+    @Override
+    protected void stopUI() {
 
     }
 
 
-    @Nullable
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_buy_coin,container,false);
+    public void onBackPressed() {
 
     }
 }

@@ -1,7 +1,5 @@
 package com.itechsofsolutions.tictactoe.ui.app.activityfragment;
 
-import androidx.recyclerview.widget.LinearLayoutManager;
-
 import com.itechsofsolutions.tictactoe.R;
 import com.itechsofsolutions.tictactoe.databinding.FragmentActivityBinding;
 import com.itechsofsolutions.tictactoe.ui.app.homefragment.HomeMvpView;
@@ -43,9 +41,9 @@ implements HomeMvpView {
 
     private void inItAdapter(){
         activityAdapter = new ActivityAdapter(getActivity());
-        mBinding.recyclerActivity.setLayoutManager(new LinearLayoutManager(getActivity(),
+        /*mBinding.recyclerActivity.setLayoutManager(new LinearLayoutManager(getActivity(),
                 LinearLayoutManager.VERTICAL,false));
-        mBinding.recyclerActivity.setAdapter(activityAdapter);
+        mBinding.recyclerActivity.setAdapter(activityAdapter);*/
     }
 
 

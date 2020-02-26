@@ -8,7 +8,7 @@
         android:id="@+id/image_view_cover"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_coverflow"
+
         android:layout_marginTop="@dimen/margin_8"
         android:scaleType="centerCrop"
         app:layout_constraintStart_toStartOf="parent"
